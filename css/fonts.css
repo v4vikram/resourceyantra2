@@ -1,0 +1,29 @@
+@font-face {
+    font-family: LufgaExtraLight;
+    src: url("../fonts/LufgaExtraLight.ttf");
+  }
+@font-face {
+    font-family: LufgaLight;
+    src: url("../fonts/LufgaLight.ttf");
+  }
+@font-face {
+    font-family: LufgaLight;
+    src: url("../fonts/LufgaRegular.ttf");
+  }
+@font-face {
+    font-family: LufgaMedium;
+    src: url("../fonts/LufgaMedium.ttf");
+  }
+  @font-face {
+    font-family: LufgaSemiBold;
+    src: url("../fonts/LufgaSemiBold.ttf");
+  }
+@font-face {
+    font-family: LufgaBold;
+    src: url("../fonts/LufgaBold.ttf");
+  }
+
+  @font-face {
+    font-family: LufgaExtraBold;
+    src: url("../fonts/LufgaExtraBold.ttf");
+  }
