@@ -1,0 +1,98 @@
+@import url('fonts.css');
+
+:root {
+    --primary: #004a80;
+    --white: #ffffff;
+    --black: #000000;
+    --dark-gray: #212222;
+    --gray: #ebebeb;
+    --yellow: #fdce08;
+    --tomato: #e41e26;
+    --green: #139747;
+
+    --font-LufgaExtraLight: 'LufgaExtraLight';
+    --font-LufgaLight: 'LufgaLight';
+    --font-LufgaMedium: 'LufgaMedium';
+    --font-LufgaSemiBold: 'LufgaSemiBold';
+    --font-LufgaBold: 'LufgaBold';
+    --font-LufgaSemiBold: 'LufgaSemiBold';
+    --font-LufgaExtraBold: 'LufgaExtraBold';
+
+    --heading-lg-h1: 70px;
+    --heading-lg-h2: 70px;
+    --heading-md-h2: 40px;
+    --heading-sm-h2: 43px;
+    --heading-lg-h3: 30px;
+    --heading-md-h3: 30px;
+    --heading-sm-h3: 20px;
+    --heading-lg-h4: 50px;
+    --heading-md-h4: 40px;
+    --heading-sm-h4: 20px;
+    --paragraph: 16px;
+    --para-lg-w: 70%;
+    --para-md-w: 80%;
+    --para-sm-w: 100%;
+    --custom-lg-w: 75%;
+    --custom-md-w: 80%;
+    --custom-sm-w: 100%;
+    --transition: all 0.6s ease
+}
+
+body,
+html,
+* {
+    font-family: var(--font-LufgaLight);
+}
+
+.theme-main-menu .navbar .navbar-nav .nav-link {
+    position: relative;
+    color: var(--black);
+    font-family: var(--font-LufgaLight);
+}
+
+.theme-main-menu .navbar .navbar-nav .nav-item .nav-link.active,
+.theme-main-menu .navbar .navbar-nav .nav-item:hover .nav-link,
+.theme-main-menu .navbar .navbar-nav .nav-item:hover .dropdown-toggle::after {
+    color: var(--primary);
+}
+
+.theme-main-menu .navbar .navbar-nav .nav-link::before,
+.theme-main-menu .navbar .navbar-nav .nav-link.active::before {
+    background: var(--primary);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 0;
+}
+
+.custom-btn {
+    background: var(--dark-gray) !important;
+    border-radius: 5px !important;
+    color: #ffffff !important;
+    font-family: 'Inter' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    transition: all 0.3s ease-in-out !important;
+    padding: 12px 30px !important;
+}
+.span-two {
+    color: var(--primary);
+}
+
+.about-us-rapper .right-about-two p:nth-child(3)::before {
+    background: var(--primary);
+}
+.choose-us-heading h2 span {
+    color: var(--primary);
+}

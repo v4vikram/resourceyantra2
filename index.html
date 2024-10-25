@@ -28,169 +28,175 @@
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="72x33" href="images/fabicon.png">
 	<!-- Main style sheet -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-	<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-	<!-- responsive style sheet -->
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
-
-	<!-- Fix Internet Explorer ______________________________________-->
-	<!--[if lt IE 9]>
-			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-			<script src="vendor/html5shiv.js"></script>
-			<script src="vendor/respond.js"></script>
-		<![endif]-->
-	<style>
-		.h-section {
-			display: flex;
-			height: 100vh;
-			overflow: hidden;
-			/* Hide overflow for parent div */
-		}
-
-		.h-section-items {
-			min-width: 100vw;
-			/* Each section takes full viewport width */
-			height: 100vh;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			position: relative;
-			color: white;
-		}
-
-		.h-section-items:nth-child(1) {
-			background-color: #f7f7f7;
-		}
-
-		.h-section-items:nth-child(2) {
-			background-color: #3498db;
-		}
-
-		.h-section-items:nth-child(3) {
-			background-color: #9b59b6;
-		}
-
-		.h-section-items:nth-child(4) {
-			background-color: #e74c3c;
-		}
-
-		.h-section-items:nth-child(5) {
-			background-color: #f39c12;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/font-awesome/css/all.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="./assets/vendor/bootstrap/css/bootstrap.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="./css/navbar.css" media="all">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all"> -->
+	<link rel="stylesheet" type="text/css" href="./css/main.css" media="all">
 </head>
 
 <body>
 	<div class="main-page-wrapper">
-		<!-- ===================================================
-				Loading Transition
-			==================================================== -->
-		<!-- <div id="preloader">
-			<div id="khoj-preloader" class="khoj-preloader">
-				<div class="animation-preloader">
-					<h1>khuj</h1>
-				</div>
-			</div>
-		</div> -->
-		<!--=========================
-			 header html start  1
-			 =================================  -->
+		<!-- menu -->
 		<div class="theme-main-menu sticky-menu theme-menu-one">
-			<div class="inner-content">
-				<div class="d-flex align-items-center justify-content-between">
-					<div class="d-flex logo order-lg-0"><a href="" class="d-block"><img src="images/header-logo.png"
-								alt="resourceyantra logo" style="width: 150px;"></a></div>
-					<!-- ================================================
-												  nav bar start
-							 ================================================ -->
-					<div class="left-wiget">
-						<nav class="navbar navbar-expand-lg order-lg-2">
-							<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
-								data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-								aria-label="Toggle navigation">
-								<span></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarNav">
-								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-									<li class="nav-item">
-										<a class="nav-link active" href="index.html">Home</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="about-us.html">About us</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="recruitment.html">recruitment</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="contact-us.html">Contact us</a>
-									</li>
-								</ul>
-							</div>
-						</nav>
+			<div class="container">
+				<div class="inner-content">
+					<div class="d-flex align-items-center justify-content-between">
+						<div class="d-flex logo order-lg-0">
+							<a href="" class="d-block">
+								<img src="assets/images/header-logo.png" alt="resourceyantra logo"
+									style="width: 150px;"></a>
+						</div>
+						<div class="left-wiget">
+							<nav class="navbar navbar-expand-lg order-lg-2">
+								<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
+									data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+									aria-label="Toggle navigation">
+									<span></span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarNav">
+									<ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+										<li class="nav-item">
+											<a class="nav-link active" href="index.html">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="about-us.html">About us</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="recruitment.html">recruitment</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="contact-us.html">Contact us</a>
+										</li>
+										<li>
+											<a href="/contact" class="button nav w-button mt-3 mt-lg-0">‍<strong>Get
+													started</strong></a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
 					</div>
-					<!-- //header nav  -->
-					<!-- ================================================
-												  nav bar start
-						================================================ -->
 				</div>
 			</div>
 		</div>
-		<section class="about-us mt-160 md-mb-80">
-			<div class="container">
-				<div class="about-us-rapper position-relative">
-					<img src="images/shape/shape-5.png" alt="" class="shape shape-5">
-					<img src="images/shape/shape-6.png" alt="" class="shape shape-6">
-					<img src="images/shape/shape-6.png" alt="" class="shape shape-7">
-					<div class="row d-flex align-items-center.">
-						<div class="col-lg-6 col-xl-6">
-							<div class="left-about left-about-us position-relative">
-								<img src="images/banner/banner-14.png" alt="" class="">
-								<img src="images/banner/banner-13.png" alt="" class="">
-								<img src="images/screen/screen-24.png" alt="" class="">
+
+		<section class="banner-section">
+			<div class="bg-ghost-white">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-12 col-lg-6 col-xl-6 d-flex align-items-center my-34 my-lg-60 my-xl-120 order-2 order-lg-1">
+							<div class="header-slider mt-3 mt-lg-0">
+								<h1 class="heading-2 mb-0">Find out <span class="text-primary">Effortless</span> Virtual
+									Recruitment Solutions</h1>
+								<div class="heading-text-2 col-lg-9">Streamline your hiring process with Resource Yantra
+									by opting for dedicated virtual employees who work solely for you while we handle
+									their recruitment and payroll.</div>
+								<!-- /.header-slider-content -->
+
+								<div class="d-flex flex-wrap align-items-center mt-4">
+									<a class="button nav w-button mt-3 mt-lg-0 ms-0" href="/joblist.html" role="button">
+										Discover Staffing Made Easy
+									</a>
+
+								</div>
+								<!-- /.btn-discover-now and watch-video -->
+
+								<div class="pagination-slider pagination-line header-slider-pagination mt-60"></div>
+								<!-- /.header-slider-pagination -->
 							</div>
+							<!-- /.header-slider -->
 						</div>
-						<div class="col-lg-5 col-xl-5 offset-lg-1 offset-xl-1 md-mt-80">
-							<div class="right-about-two">
-								<span class="span-two">Hire Virtual Staff</span>
-								<h2 class="heading-2 mt-20 mb-30">Effortless Virtual Recruitment Solutions</h2>
-								<p>Streamline your hiring process with Resource Yantra by opting for dedicated virtual
-									employees who work solely for you while we handle their recruitment and payroll.</p>
-								<a href="#" class="custom-btn">Contact Me</a>
+						<!-- /.col -->
+
+						<div class="col-12 col-lg-6 col-xl-6 order-1 order-lg-2">
+							<div class="left-about-one">
+								<div class="left-about-on-wrapper">
+									<div class="pic-one-wrapper">
+										<img src="assets/images/banner/banner-2.jpg" alt="" class="pic-one">
+									</div>
+
+									<img src="assets/images/screen/screen-4.png" alt="" class="pic-two">
+									<img src="assets/images/screen/screen-5.png" alt="" class="pic-three">
+									<img src="assets/images/screen/screen-6.png" alt="" class="pic-four">
+									<img src="assets/images/shape/shape-4.png" alt="" class="pic-five">
+								</div>
 							</div>
+
 						</div>
+						<!-- /.col -->
 					</div>
+					<!-- /.row -->
 				</div>
+				<!-- /.container -->
 			</div>
 		</section>
 
-		<section class="why-choose-us why-choose-us2">
-			<div class="why-choose-us-rapper">
-				<div class="container">
-					<div class="choose-us-content">
-						<img src="images/shape/shape-6.png" alt="" class="shape shape-9">
-						<img src="images/shape/shape-6.png" alt="" class="shape shape-10">
-						<img src="images/shape/shape-6.png" alt="" class="shape shape-11">
-						<div class="row d-flex align-items-center pt-80 pb-140 md-pb-80">
-							<div class="col-xl-5 left-choose-content md-pb-40">
-								<div class="choose-us-heading">
-									<span class="span-two">Digital Resource,
-										Real-World Expertise</span>
-									<h2 class="text-justify mt-20 mb-20"><span>Secure</span> a Dedicated
-										Virtual Assistant</h2>
-									<p>At Resource Yantra, we don’t just provide virtual employees; we offer a seamless
-										extension of your team. Our platform connects businesses with highly skilled,
-										dedicated virtual assistants carefully selected to match your company’s specific
-										needs.</p>
-									<p>Whether you’re looking to streamline operations, reduce overhead costs, or
-										improve productivity, Resource Yantra provides the expertise to help your
-										business thrive.</p>
-									<a href="#" class="custom-btn mt-3">Learn More</a>
+		<section class="about-us position-relative pb-160 md-pb-90 mt-100">
+			<div class="container">
+				<div class="about-us-rapper position-relative">
+					<!-- >>>shapes -->
+					<img src="assets/images/shape/shape-5.png" alt="" class="shape shape-5">
+					<img src="assets/images/shape/shape-6.png" alt="" class="shape shape-6">
+					<img src="assets/images/shape/shape-6.png" alt="" class="shape shape-7">
+					<div class="row d-flex align-items-center justify-content-center">
+						<!-- shapes/// -->
+						<div class="col-lg-6">
+							<div class="left-about-one ">
+								<img src="assets/images/banner/banner-2.jpg" alt="" class="pic-one">
+								<img src="assets/images/screen/screen-4.png" alt="" class="pic-two">
+								<img src="assets/images/screen/screen-5.png" alt="" class="pic-three">
+								<img src="assets/images/screen/screen-6.png" alt="" class="pic-four">
+								<img src="assets/images/shape/shape-4.png" alt="" class="pic-five">
+							</div>
+						</div>
+						<div class="col-lg-5 offset-lg-1">
+							<div class="right-about md-mt-50">
+								<span class="span-one">Digital Resource,
+									Real-World Expertise</span>
+								<h2 class="heading-2 mt-3">Secure a Dedicated Virtual Assistant</h2>
+								<p class="mt-3">Energistically iterate effective data whereas is to highly efficient
+									e-business. Conveniently and productivate leang edge models visa visaa wireless
+									ideas.</p>
+								<!-- <a href="" class="md-mt-20">More Details</a> -->
+							</div>
+							<div class="staticties mt-4">
+								<div class="row d-flex align-items-center">
+									<div class="col-6 col-md-3 col-lg-6">
+										<div
+											class="statistics-1 d-flex align-items-center align-items-lg-start flex-column mb-4">
+											<div class="top"><span class="counter">12.6</span>K</div>
+											<div class="bottom"><span class="">Project Done</span></div>
+										</div>
+									</div>
+									<div class="col-6 col-md-3 col-lg-6">
+										<div
+											class="statistics-1 d-flex align-items-center align-items-lg-start flex-column mb-4">
+											<div class="top" style="color: #de3434;"><span class="counter">25</span>+
+											</div>
+											<div class="bottom"><span class="">Years Experience</span></div>
+										</div>
+									</div>
+									<div class="col-6 col-md-3 col-lg-6">
+										<div
+											class="statistics-1 d-flex align-items-center align-items-lg-start flex-column mb-4">
+											<div class="top" style="color: #3e9ee8;"><span class="counter">14.6</span>K
+											</div>
+											<div class="bottom"><span class="">World Wide Clients</span></div>
+										</div>
+									</div>
+									<div class="col-6 col-md-3 col-lg-6">
+										<div
+											class="statistics-1 d-flex align-items-center align-items-lg-start flex-column mb-4">
+											<div class="top" style="color: #54b38b;"><span class="counter">4.7</span>K+
+											</div>
+											<div class="bottom"><span class="">Customer Reviews</span></div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-xl-6 offset-xl-1 right-choose-content">
-								<img src="img/virual-assistant.jpg" alt="" class="ms-auto">
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -211,64 +217,119 @@
 				</div>
 			</div>
 			<div class="h-section">
-				<div class="h-section-items">
+				<div class="h-section-items h-items-1">
 					<div class="container">
-						<div class="row">
+						<div class="row align-items-center">
 							<div class="col-lg-6">
-								<h2 class="heading-2 mt-20">Digital Resource, Real-World Expertise</h2>
-								<p class="span-two text-start">With Resource Yantra, you can significantly reduce the costs of hiring full-time, in-house employees. There’s no need for physical office space, employee benefits, or additional overheads. Our virtual employees work remotely, saving your business money while delivering top-tier results.</p>
+								<h2 class="heading-2 mt-20 text-light">Digital Resource, Real-World Expertise</h2>
+								<p class="span-two text-start">With Resource Yantra, you can significantly reduce the
+									costs of hiring full-time, in-house employees. There’s no need for physical office
+									space, employee benefits, or additional overheads. Our virtual employees work
+									remotely, saving your business money while delivering top-tier results.</p>
+									
 							</div>
 							<div class="col-lg-6">
-								<img src="img/virtual-employee.jpg" alt="virtual-employee.jpg" class="img-fluid">
+								<img src="assets/img/virtual-employee.jpg" alt="virtual-employee.jpg"
+									class="img-fluid slide-image">
 							</div>
 						</div>
 					</div>
-	
+
 				</div>
-			</div>
+				<div class="h-section-items h-items-2">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<h2 class="heading-2 mt-20 text-light">Flexible and Scalable Workforce</h2>
+								<p class="span-two text-start">Whether you need to scale up for a project or reduce your workforce during quieter periods, Resource Yantra allows you to adjust your team size as required. Our virtual staffing model is designed for flexibility, ensuring you have the right resources when needed without long-term commitments.</p>
+									
+							</div>
+							<div class="col-lg-6">
+								<img src="assets/img/recruitment.jpg" alt="recruitment"
+									class="img-fluid slide-image">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="h-section-items h-items-3">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<h2 class="heading-2 mt-20 text-light">Access to Global Talent</h2>
+								<p class="span-two text-start">With Resource Yantra, you are not limited to local talent pools. We provide access to highly skilled professionals from across the globe, ensuring that you get the specialized expertise your business requires. This broad talent pool allows you to hire the best person for the job, regardless of geographic location.</p>
+									
+							</div>
+							<div class="col-lg-6">
+								<img src="assets/img/manpower.jpg" alt="manpower"
+									class="img-fluid slide-image">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="h-section-items h-items-4">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<h2 class="heading-2 mt-20 text-light">Increased Productivity</h2>
+								<p class="span-two text-start">Our virtual employees are dedicated to taking on the time-consuming tasks that o en distract your in-house team from their core responsibilities. By delegating routine duties to Resource Yantra’s virtual assistants, your business can achieve higher productivity and efficiency.</p>
+									
+							</div>
+							<div class="col-lg-6">
+								<img src="assets/img/out-sourcing.jpg" alt="out-sourcing"
+									class="img-fluid slide-image">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="h-section-items h-items-5">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<h2 class="heading-2 mt-20 text-light">Seamless Integration with Your Team</h2>
+								<p class="span-two text-start">Resource Yantra ensures that our virtual employees integrate smoothly into your company’s workflow. We use advanced collaboration tools like Slack, Zoom, and Asana to keep communication open and projects on track. Our virtual assistants are skilled in working remotely while staying connected, making them a reliable part of your team.</p>
+									
+							</div>
+							<div class="col-lg-6">
+								<img src="assets/img/training.jpg" alt="training"
+									class="img-fluid slide-image">
+							</div>
+						</div>
+					</div>
+
+				</div>
+	
+		
+		</div>
 		</section>
 
-		<!-- Optional JavaScript   -->
-		<!-- jQuery first, then Bootstrap JS -->
 		<!-- jQuery -->
-		<script src="vendor/jquery.min.js"></script>
+		<script src="assets/vendor/jquery.min.js"></script>
 		<!-- Bootstrap JS -->
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<!-- AOS js -->
-		<script src="vendor/aos-next/dist/aos.js"></script>
+		<script src="assets/vendor/aos-next/dist/aos.js"></script>
 		<!-- Slick Slider -->
-		<script src="vendor/slick/slick.min.js"></script>
+		<script src="assets/vendor/slick/slick.min.js"></script>
 		<!-- js Counter -->
-		<script src="vendor/jquery.counterup.min.js"></script>
-		<script src="vendor/jquery.waypoints.min.js"></script>
+		<script src="assets/vendor/jquery.counterup.min.js"></script>
+		<script src="assets/vendor/jquery.waypoints.min.js"></script>
 		<!-- Nice Select -->
-		<script src="vendor/nice-select/jquery.nice-select.min.js"></script>
+		<script src="assets/vendor/nice-select/jquery.nice-select.min.js"></script>
 		<!-- Theme js -->
-		<script src="js/theme.js"></script>
+		<!-- <script src="assets/js/theme.js"></script> -->
+		<!-- GSAP and ScrollTrigger -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+		<script src="js/main.js"></script>
 	</div> <!-- /.main-page-wrapper -->
 
 
 
-	<!-- GSAP and ScrollTrigger -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-	<script>
-		gsap.registerPlugin(ScrollTrigger);
 
-		const sections = gsap.utils.toArray('.h-section-items');
-
-		gsap.to(sections, {
-			xPercent: -100 * (sections.length - 1), // Move left by full width of all sections
-			ease: 'none',
-			scrollTrigger: {
-				trigger: '.h-section',
-				pin: true,
-				scrub: 1,
-				snap: 1 / (sections.length - 1), // Snap to sections
-				end: () => "+=" + document.querySelector('.h-section').offsetWidth // End point based on container width
-			}
-		});
-	</script>
 </body>
 
 </html>

@@ -1,13 +1,16 @@
-@import url('fonts.css');
+@import url('../assets/fonts/gordita/stylesheet.css');
+@import url('../assets/fonts/Inter/css2.css');
 
 :root {
     --primary: #004a80;
+    --light-blue: #3e9ee8;
+    --light-green: #54b38b;
     --white: #ffffff;
     --black: #000000;
     --dark-gray: #212222;
     --gray: #ebebeb;
     --yellow: #fdce08;
-    --tomato: #e41e26;
+    --tomato: #de3434;
     --green: #139747;
 
     --font-LufgaExtraLight: 'LufgaExtraLight';
@@ -37,30 +40,17 @@
     --custom-sm-w: 100%;
     --transition: all 0.6s ease
 }
-
-body,
-html,
-* {
-    font-family: var(--font-LufgaLight);
-}
-
-.theme-main-menu .navbar .navbar-nav .nav-link {
+body {
+    font-family: "gordita";
+    font-weight: normal;
+    font-size: 16px;
     position: relative;
-    color: var(--black);
-    font-family: var(--font-LufgaLight);
+    color: rgba(0, 0, 0, .7);
 }
 
-.theme-main-menu .navbar .navbar-nav .nav-item .nav-link.active,
-.theme-main-menu .navbar .navbar-nav .nav-item:hover .nav-link,
-.theme-main-menu .navbar .navbar-nav .nav-item:hover .dropdown-toggle::after {
-    color: var(--primary);
-}
 
-.theme-main-menu .navbar .navbar-nav .nav-link::before,
-.theme-main-menu .navbar .navbar-nav .nav-link.active::before {
-    background: var(--primary);
-}
 
+/* =========== Scroll =============== */
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -74,25 +64,206 @@ html,
     border-radius: 0;
 }
 
-.custom-btn {
-    background: var(--dark-gray) !important;
-    border-radius: 5px !important;
-    color: #ffffff !important;
-    font-family: 'Inter' !important;
-    font-style: normal !important;
-    font-weight: 600 !important;
-    font-size: 16px !important;
-    line-height: 30px !important;
-    transition: all 0.3s ease-in-out !important;
-    padding: 12px 30px !important;
-}
-.span-two {
-    color: var(--primary);
+/* =========== Utiles =============== */
+/* button */
+.button {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    border-radius: 61px;
+    justify-content: center;
+    align-self: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.1;
+    text-decoration: none;
+    transition: transform .3s;
+    display: flex;
+    font-family: 'Inter';
 }
 
-.about-us-rapper .right-about-two p:nth-child(3)::before {
-    background: var(--primary);
+.button:hover {
+    color: var(--white);
+    transform: scale(.9);
 }
-.choose-us-heading h2 span {
+.p {
+    font-family: 'Gordita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    color: rgba(80, 80, 80, 1);
+    padding-bottom: 30px;
+}
+.heading-2 {
+    font-family: 'Gordita';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: rgba(17, 29, 59, 1);
+}
+/* =========== Banner =============== */
+.banner-section{
+    padding-top: 120px;
+}
+.left-about-one {
+    position: relative;
+}
+
+.left-about-one {
+    position: relative;
+}
+.left-about-one::after{
+  content:url("../images/assets/Group12.png");
+  position: absolute;
+  right: 31px;
+  bottom: 152px;
+  z-index: -99999;
+  transform: rotate(-15deg);
+}
+.left-about-one .pic-one {
+    position: relative;
+    bottom: 0;
+    max-width:100%;
+}
+.left-about-one .pic-two {
+    position: absolute;
+    top: 42%;
+    left: -14%;
+    max-width:100%;
+}
+.left-about-one .pic-three {
+    position: absolute;
+    right: -14%;
+    top: 4%;
+    max-width:100%;
+}
+.left-about-one .pic-four {
+   position: absolute;
+   right: -14%;
+   bottom: -11px;
+   max-width:100%;
+}
+.left-about-one .pic-five {
+    position: absolute;
+    right: -12%;
+    bottom: 18%;
+    max-width: 100%;
+    z-index: -1;
+}
+
+.pic-one-wrapper {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.pic-one-wrapper img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+}
+
+/* ============== About Us =================== */
+.span-one {
+    font-family: Gordita;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    color: rgba(80, 80, 80, 1);
+    text-align: center;
+    text-transform: uppercase;
+}
+.top {
+    font-family: 'Gordita';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
     color: var(--primary);
 }
+.bottom span {
+    font-weight: bold;
+    color: #111d3b;
+}
+
+/* ========= Slide Animation ========== */
+.h-section {
+    /* display: flex;
+    height: 100vh; */
+    /* overflow: hidden; */
+    /* Hide overflow for parent div */
+}
+
+.h-section-items {
+    min-width: 100vw;
+    /* Each section takes full viewport width */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.h-items-1 {
+    background-color: var(--tomato);
+}
+
+.h-items-2 {
+    background-color: var(--light-green);
+}
+
+.h-items-3 {
+    background-color: var(--light-blue);
+}
+
+.h-items-4 {
+    background-color: var(--primary);
+}
+
+.h-items-5 {
+    background-color: var(--dark-gray);
+}
+.slide-image{
+    border-radius: 100px;
+}
+
+.hig-scroll-wrapper{
+    width: 40%;
+}
+.hig-scroll-bottom{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(125, 127, 125);
+}
+.hig-scroll-indicator{
+    width: 00%;
+    height: 4px;
+    background-color: rgb(62, 62, 136);
+}
+
+@media(max-width: 767px){
+    .pic-one-wrapper {
+        width: 100%;
+        height: 100%;
+        border-radius: 0%;
+    }
+    .left-about-one .pic-three, .left-about-one .pic-five {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
